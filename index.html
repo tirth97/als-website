@@ -3,16 +3,12 @@
 
 <head> <!-- Meta tags, scripts, links and other tools used go in here-->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, intial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Anjani Lifecure Sciences</title>
+
+    <!-- Load in bootstrap css files. Initialize our styles file to overwrite bootstrap style-->
     <link rel="stylesheet" href="styles.css">
-    <script src="script.js"></script>
-    <!--Script below needed to run jquery in script.js-->
-    <script
-        src="https://code.jquery.com/jquery-3.6.0.min.js"
-        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
-        crossorigin="anonymous">
-    </script>
+
 </head>
 
 
@@ -20,32 +16,73 @@
 
     <!-- Navbar section-->
     <nav class="navbar">
+        <div class="max-width">
+            <div class="logo"> <a href="#">Anjani</a></div>
+            <ul class="menu">
+                <li><a href="#home" class="menu-btn">Home</a></li>
+                <li><a href="#about" class="menu-btn">About</a></li>
+                <li><a href="#products" class="menu-btn">Products</a></li>                
+                <li><a href="#testimonials" class="menu-btn">Testimonials</a></li>                
+                <li><a href="#contact" class="menu-btn">Contact</a></li>
+            </ul>
 
+            <div class="menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
     </nav>
+    
 
 
     <!--Home section-->
-    <div class="home" id="home">
+    <section class="home" id="home">
+        <div class="max-width">
+            <div class="home-content">
+                <div class="text-1"> Welcome to</div>
+                <div class="text-2"> Anjani Lifecure Sciences</div>
+                <a href="#products">Shop <i class="fas fa-shopping-bag"></i></a>
+            </div>
+        </div>
+    </section>
 
-    </div>
-
+    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, vel voluptate. Vero repellendus sed, eveniet
+        earum similique ratione repudiandae id maxime ducimus tenetur sequi quasi ab veniam
+        recusandae placeat inventore! Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi laudantium impedit,
+        voluptatum repellendus placeat reiciendis qui aliquam, sunt harum magni sit suscipit dolorum cumque dignissimos necessitatibus enim asperiores numquam hic!</div>
 
     <!--About section-->
-    <div class="about" id="about">
+    <section class="about" id="about">
 
-    </div>
+    </section>
 
 
-    <!--Product section-->
-    <div class="product" id="product">
+    <!--Products section-->
+    <section class="products" id="products">
 
-    </div>
+    </section>
 
     
-    <!-- Contact section-->
-    <div class="contact" id="contact">
+    <!--Testimonial section-->
+    <section class="testimonials" id="testimonials">
 
-    </div>
+    </section>
+
+
+    <!-- Contact section-->
+    <section class="contact" id="contact">
+
+    </section>
+
+
+    <!-- JQuery script, bootstrap js script, and our own script.js included here
+    (Bootstrap JS plugins depend on jQuery)-->
+    <script
+        src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+        crossorigin="anonymous">
+    </script>
+    <script src="script.js"></script>
+
 </body>
 
 <!--Footer section-->
