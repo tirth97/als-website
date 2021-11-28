@@ -146,6 +146,128 @@ body {
   color: rgb(255, 192, 74);
 }
 
+/*About us section styling*/
+
+section {
+  padding: 100px 0;
+}
+
+.about {
+  font-family: "Oswald", sans-serif;
+}
+
+section .title {
+  position: relative;
+  text-align: center;
+  font-size: 45px;
+  font-weight: 500;
+  margin-bottom: 45px;
+  padding-bottom: 20px;
+}
+
+blockquote {
+  text-align: center;
+  margin: 0 10px;
+  padding: 10px 0px 80px 0px;
+  font-size: 30px;
+  font-style: oblique;
+}
+
+blockquote:before {
+  position: relative;
+  font-size: 35px;
+  line-height: 1;
+  top: 2px;
+  right: 5px;
+  content: open-quote;
+}
+
+blockquote:after {
+  position: relative;
+  font-size: 35px;
+  line-height: 1;
+  top: 2px;
+  left: 5px;
+  content: close-quote;
+}
+
+.about-content .cards {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.about-content .card {
+  width: calc(50% - 20px);
+  min-height: 100px;
+  position: relative;
+  padding-bottom: 50px;
+  margin-bottom: 30px;
+  background: lightgreen;
+  box-shadow: 0 21px 35px rgb(0 0 0 / 0.4);
+  border: 2px solid transparent;
+  border-radius: 10px;
+  overflow: hidden;
+  flex-wrap: wrap;
+  transition: all 0.5s ease;
+  text-align: center;
+}
+
+.about .about-content .card:hover {
+  transform: scale(1.05);
+}
+
+.about .about-content .card .subheading {
+  font-size: 35px;
+  margin-top: 10px;
+}
+
+.about .about-content .card i {
+  font-size: 60px;
+  color: rebeccapurple;
+  margin-top: 10px;
+}
+
+.about .about-content .card .text {
+  font-size: 20px;
+  padding: 20px 15px 15px 15px;
+}
+
+.about-content .blocks {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-top: 40px;
+}
+
+.about .about-content .block {
+  width: calc(25% - 30px);
+  min-height: 50px;
+  position: relative;
+  padding: 20px;
+  margin-bottom: 10px;
+  background: transparent;
+  border: 2px solid transparent;
+  border-radius: 10px;
+  overflow: hidden;
+  flex-wrap: wrap;
+  transition: all 0.5s ease;
+  text-align: center;
+}
+
+.about .about-content .block .num {
+  font-size: 50px;
+  font-weight: 500;
+  color: rebeccapurple;
+}
+
+.about .about-content .block .label {
+  font-size: 25px;
+  font-weight: 400;
+}
+
 /*Responsive Media Queries section*/
 
 /*Largest screen-size possible
@@ -235,6 +357,18 @@ device sizes
   .home .home-content a {
     font-size: 22px;
     padding: 5px 16px;
+  }
+
+  .about .about-content .card {
+    margin-bottom: 30px;
+    flex: 100%;
+    width: 100%;
+  }
+
+  .about .about-content .block {
+    margin-bottom: 30px;
+    flex: 50%;
+    width: 50%;
   }
 }
 
