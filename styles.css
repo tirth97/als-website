@@ -148,23 +148,6 @@ body {
 
 /*About us section styling*/
 
-section {
-  padding: 100px 0;
-}
-
-.about {
-  font-family: "Oswald", sans-serif;
-}
-
-section .title {
-  position: relative;
-  text-align: center;
-  font-size: 45px;
-  font-weight: 500;
-  margin-bottom: 45px;
-  padding-bottom: 20px;
-}
-
 blockquote {
   text-align: center;
   margin: 0 10px;
@@ -189,13 +172,6 @@ blockquote:after {
   top: 2px;
   left: 5px;
   content: close-quote;
-}
-
-.about-content .cards {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
 }
 
 .about-content .card {
@@ -266,6 +242,96 @@ blockquote:after {
 .about .about-content .block .label {
   font-size: 25px;
   font-weight: 400;
+}
+
+/*Product Section styling*/
+
+.products-content .subtitle {
+  position: relative;
+  text-align: center;
+  font-size: 35px;
+  font-weight: 400;
+  margin-bottom: 45px;
+  padding-bottom: 20px;
+}
+
+.products-content .pills img {
+  height: 239px;
+  width: 400px;
+  padding: 0px 0;
+}
+
+.products-content .bottles img {
+  width: 239px;
+  height: 400px;
+  padding: 20px;
+}
+
+.products-content .pills .card {
+  width: calc(33% - 20px);
+  min-height: 450px;
+  position: relative;
+  padding-bottom: 50px;
+  margin-bottom: 30px;
+  background: white;
+  box-shadow: 0 21px 35px rgb(0 0 0 / 0.3);
+  border: 2px solid grey;
+  border-radius: 10px;
+  overflow: hidden;
+  flex-wrap: wrap;
+  transition: all 0.5s ease;
+  text-align: center;
+}
+
+.products-content .bottles .card {
+  width: calc(50% - 20px);
+  min-height: 500px;
+  position: relative;
+  padding-bottom: 50px;
+  margin-bottom: 30px;
+  background: white;
+  box-shadow: 0 21px 35px rgb(0 0 0 / 0.3);
+  border: 2px solid grey;
+  border-radius: 10px;
+  overflow: hidden;
+  flex-wrap: wrap;
+  transition: all 0.5s ease;
+  text-align: center;
+}
+
+.products-content .pills .text {
+  font-size: 25px;
+  font-weight: 400;
+  padding: 20px 0 15px 0;
+}
+
+.products-content .pills .price {
+  font-size: 30px;
+  font-weight: 500;
+  color: green;
+}
+
+/*Common section styling across all sections*/
+section {
+  padding: 100px 0;
+  font-family: "Oswald", sans-serif;
+}
+
+section .title {
+  position: relative;
+  text-align: center;
+  font-size: 55px;
+  font-weight: 500;
+  margin-bottom: 45px;
+  padding-bottom: 20px;
+}
+
+.about-content .cards,
+.products-content .cards {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 /*Responsive Media Queries section*/
